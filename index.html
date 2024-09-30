@@ -1,3 +1,5 @@
+
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +15,9 @@
             color: #333;
         }
         header {
-            background: white; /* Changed to white background */
-            color: #333; /* Changed text color to dark */
-            padding: 10px 5px; /* Reduced padding for a shorter header */
+            background: white; /* White background for header */
+            color: #333; /* Standard text color */
+            padding: 10px 5px; /* Slightly adjusted padding */
             text-align: center;
         }
         main {
@@ -27,64 +29,62 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1, h2 {
-            color: #970213; /* SJU Crimson */
+            color: #333; /* Standard text color for headers */
         }
         p, li {
             line-height: 1.6;
         }
         nav ul {
             list-style-type: none;
-            margin: 0;
+            margin: 0; /* Ensure no default margin */
             padding: 0;
             text-align: center;
-            background: white; /* Changed to white */
+            background: #970213; /* SJU Crimson for navigation bar */
         }
         nav ul li {
-            display: inline-block;
-            margin: 0 10px;
+            display: inline-block; /* Changed from inline to inline-block for better control */
+            margin: 0 10px; /* Added spacing between items */
         }
         nav ul li a {
             text-decoration: none;
-            color: #970213; /* Text color to SJU Crimson */
-            background: white; /* Background to white */
+            color: white; /* Text color white to contrast with the red background */
+            background: #970213; /* Background color maintained for individual links */
             padding: 10px 15px;
-            border-radius: 5px;
+            border-radius: 5px; /* Aesthetic border-radius */
         }
         nav ul li a:hover {
             background-color: #BA2D4F; /* Darker crimson for hover */
         }
         .profile-pic {
-            width: 150px;
+            width: 150px; /* Adjusted size for the profile picture */
             height: auto;
             display: block;
             margin: 10px auto;
         }
         section {
-            background-color: #970213; /* SJU Crimson background for sections */
-            color: white; /* Text color to white for readability */
-            padding: 10px;
             margin-bottom: 20px;
-        }
-        .projects, .project, .project-image, .project-description {
-            width: 100%;
-            display: block;
-        }
-        @media (max-width: 600px) {
-            .project {
-                width: 100%;
-            }
+            background: white; /* Background color for sections */
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="ai.jpg" alt="Title Image" style="width:100%; height:auto;"> <!-- Title image for the page -->
+        <img src="title-image.jpg" alt="Title Image" style="width:100%; height:auto;"> <!-- Title image for the page -->
         <h1>Dr. Liyuan Liu</h1>
         <p>Liyuan Liu, Ph.D. - Assistant Professor</p>
         <p>Department of Decision & System Sciences, Haub Business School</p>
         <p>Saint Joseph’s University</p>
     </header>
     <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#research">Research</a></li>
