@@ -94,6 +94,21 @@ Copy code
                 width: 100%; /* Full width on smaller screens */
             }
         }
+        .jiggy-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.jiggy-photo {
+    width: 100px; /* Adjusted for smaller size */
+    height: auto;
+    margin: 5px;
+    border: 2px solid #ccc; /* Adds a light gray border around the photos */
+    border-radius: 5px; /* Optional: Rounds the corners of the images */
+}
+
     </style>
 </head>
 <body>
@@ -249,7 +264,7 @@ Copy code
     <p>I am proud to announce that several of my DSS 451 (Machine Learning in Business Application I) and DSS 455 (Machine Learning in Business Application II) students have successfully published their research papers at the prestigious International Conference on Software Engineering and Artificial Intelligence (SEAI). This milestone is a testament to their hard work and the practical, research-driven approach we foster in our machine learning classes.</p>
 
     <h4>Paper Title: Integrating AI and ChatGPT in Wearable Devices for Enhanced Abnormal Activity Reporting: A Mixture of Experts Approach</h4>
-    <img src="MoE.jpg" alt="AI in Wearable Devices" style="width:100%; max-width:300px; height:auto;">
+   <img src="MoE.jpg" alt="AI in Wearable Devices" style="width:100%; max-width:600px; height:auto; display:block; margin:auto;">
     <p>The rapid advancement of Artificial Intelligence (AI) and Generative AI (GAI) has greatly enhanced the capabilities of wearable devices, extending their use beyond just senior independent living to a broader user base. These technologies excel at detecting abnormal activities, crucial for the timely identification of potential health emergencies. This functionality enables users and healthcare providers to monitor abnormalities effortlessly, though it also presents substantial challenges such as high computational demands and sustainability concerns in AI data centers. A significant challenge arises from the variability of data across different channels, which can lead to suboptimal predictions when relying on one-dimensional data. To address these issues, we have implemented a Mixture of Experts (MoE) approach, operating multiple AI models simultaneously, each tailored to the specific characteristics of the data they process. Our system includes ChatGPT for generating timely reports, a deep neural network for analyzing sensor data, a Convolutional Neural Network (CNN) for identifying patterns in image data, and a Recurrent Neural Network (RNN) for processing time-series data, capturing the dynamics inherent in physical activities. This integrated approach not only improves the accuracy of abnormal activity detection but also efficiently manages multichannel data, significantly reducing computational and electrical loads compared to traditional methods. This makes the wearable devices more effective and user-friendly, enhancing overall system performance and sustainability.</p>
     <a href="https://ieeexplore.ieee.org/abstract/document/10674191" target="_blank">Read the full paper</a>
     </div>
@@ -259,11 +274,11 @@ Copy code
         <section id="teaching-fun">
     <h3>Teaching with Funs</h3>
     <p>In a delightful tradition from our Machine Learning class, students receive a special pen and nicknamed "Jiggly". After graduation, the student take Jiggly along on the adventures, photographing it in various global locations. I must admit, I'm a bit jealous of Jiggy’s adventures!</p>
-    <div class="jiggy-gallery">
+ <div class="jiggy-gallery">
         <img src="IMG_0939.jpeg" alt="Jiggly in Athens, Greece" class="jiggy-photo">
         <img src="IMG_0941.jpeg" alt="Jiggly in Santorini, Greece" class="jiggy-photo">
-        <img src="IMG_0942.jpeg" alt="Jiggly in Santorini, Greece" class="jiggy-photo">
-         <img src="j1.jpg" alt="Jiggly in Dublin, Ireland" class="jiggy-photo">
+        <img src="IMG_0942.jpg" alt="Jiggly in Santorini, Greece" class="jiggy-photo">
+        <img src="j1.jpg" alt="Jiggly in Dublin, Ireland" class="jiggy-photo">
     </div>
 </section>
 
