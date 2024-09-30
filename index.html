@@ -66,11 +66,35 @@ Copy code
             background: white; /* Background color for sections */
             padding: 10px;
         }
+              /* New CSS for projects */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            width: 45%; /* Adjust based on preference */
+            margin: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1); /* Optional */
+        }
+        .project-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .project-description {
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            .project {
+                width: 100%; /* Full width on smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="title-image.jpg" alt="Title Image" style="width:100%; height:auto;"> <!-- Title image for the page -->
+        <img src="ai.jpg" alt="Title Image" style="width:100%; height:30px;"> <!-- Title image for the page -->
         <h1>Dr. Liyuan Liu</h1>
         <p>Liyuan Liu, Ph.D. - Assistant Professor</p>
         <p>Department of Decision & System Sciences, Haub Business School</p>
@@ -85,24 +109,17 @@ Copy code
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am Dr. Liyuan Liu, an Assistant Professor in the Department of Decision & System Sciences at Saint Joseph’s University. With a rich portfolio of 30 peer-reviewed articles, my academic work is widely recognized within the fields of data science and analytics. My research spans AI algorithms in diverse applications such as marketing, healthcare, finance, human resource management, and education. I also focus on the design of incentive mechanisms in the big data era, data security and privacy, and FinTech innovations like blockchain.</p>
-
-            <p>Throughout my career, I have been honored with two Best Paper Awards and a Best Presenter Award at various international conferences. These accolades reflect my commitment to excellence in research and scholarship. Additionally, my dedication to teaching and student engagement has been recognized by Saint Joseph’s University Men's Basketball Team with the Most Valuable Professor Award, highlighting my impact beyond the classroom.</p>
-
-            <p>For more about my scholarly work, please visit my <a href="https://scholar.google.com/citations?user=rygzOL4AAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
-             <p>Outside the university, I balance my intellectual pursuits with personal passions. I’ve been playing the accordion for over 20 years and enjoy sharing music with my son Noah on the piano. I find relaxation in cooking diverse cuisines, dancing, and playing Majiang. My creative side is also expressed through writing Chinese prose, an art form in which I have won third place in a national competition. Reading remains a significant part of my life, with "The Crowd" being my favorite book, offering insights into human behavior that resonate deeply with my professional interests.</p>
-        </section>
+       <section id="about">
+    <h2>About Me</h2>
+    <!-- Embedding the photo -->
+    <img src="liyuan.jpg" alt="Dr. Liyuan Liu" style="width:50px; height:auto; float:left; margin-right:20px;">
+    <p>I am Dr. Liyuan Liu, an Assistant Professor in the Department of Decision & System Sciences at Saint Joseph’s University. With a rich portfolio of 30 peer-reviewed articles, my academic work is widely recognized within the fields of data science and analytics. My research spans AI algorithms in diverse applications such as marketing, healthcare, finance, human resource management, and education. I also focus on the design of incentive mechanisms in the big data era, data security and privacy, and FinTech innovations like blockchain.</p>
+    <p>Throughout my career, I have been honored with two Best Paper Awards and a Best Presenter Award at various international conferences. These accolades reflect my commitment to excellence in research and scholarship. Additionally, my dedication to teaching and student engagement has been recognized by Saint Joseph’s University Men's Basketball Team with the Most Valuable Professor Award, highlighting my impact beyond the classroom.</p>
+    <p>For more about my scholarly work, please visit my <a href="https://scholar.google.com/citations?user=rygzOL4AAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
+    <p>Outside the university, I balance my intellectual pursuits with personal passions. I’ve been playing the accordion for over 20 years and enjoy sharing music with my son Noah on the piano. I find relaxation in cooking diverse cuisines, dancing, and playing Majiang. My creative side is also expressed through writing Chinese prose, an art form in which I have won third place in a national competition. Reading remains a significant part of my life, with "The Crowd" being my favorite book, offering insights into human behavior that resonate deeply with my professional interests.</p>
+    <div style="clear:both;"></div> <!-- Clear the float -->
+</section>
         <section id="research">
     <h2>Research</h2>
     <div class="projects">
@@ -206,7 +223,6 @@ Copy code
             <img src="jiggy1.jpg" alt="Jiggy in Paris" class="jiggy-photo">
             <img src="jiggy2.jpg" alt="Jiggy in Tokyo" class="jiggy-photo">
             <img src="jiggy3.jpg" alt="Jiggy in New York" class="jiggy-photo">
-            <!-- More images can be added here -->
         </div>
     </div>
 </section>
